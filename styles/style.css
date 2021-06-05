@@ -88,11 +88,6 @@
 }
 
 /* description */
-
-.description {
-  min-height: 200px;
-}
-
 .two-columns {
   width: 80%;
   display: flex;
