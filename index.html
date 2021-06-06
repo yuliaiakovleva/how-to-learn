@@ -13,12 +13,12 @@
 <body>
   <div class="page">
     <header class="header">
-      <img class="logo logo_place_header" alt="Логотип" src="./images/logo_place_header.svg">
+      <img class="logo logo_place_header" alt="логотип" src="./images/logo_place_header.svg">
       <h1 class="header__title">Научиться учиться</h1>
-      <h2 class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей
+      <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей
         жизни?
-        <a class="header__link" href="#">Узнать →</a>
-      </h2>
+        <a class="header__link" href="#">Узнать &#8594;</a>
+      </p>
       <img class="header__main-illustration" alt="Мальчик с собакой" src="./images/header-image.png">
       <div class="header__square-pic"></div>
     </header>
@@ -27,9 +27,9 @@
   <div class="page">
     <main class="content">
       <section class="description">
-        <div class="two-columns">
-          <h2 class="two-columns__brief">Главные проблемы в обучении</h2> <!-- Точно ли это заголовок второго уровня? -->
-          <div class="two-columns__main-text">
+        <article class="two-columns">
+          <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
+          <article class="two-columns__main-text">
             <p class="two-columns__paragraph">Ни в школе, ни в институте нас не учат тому, как правильно изучать материал.
               Мы готовимся к экзаменам и учим билеты. Мы тренируемся решать однообразные задачи, чтобы лучше сдать тест,
               но часто в итоге это не дает нам реального знания. Зубрежка быстро выветривается и не приносит пользы.</p>
@@ -38,17 +38,13 @@
             </p>
             <p class="two-columns__paragraph">Конкретные техники и упражнения помогают изменить подход к обучению, сделать
               его эффективным и захватывающим. Эти же техники применяются на примере обучения в Практикуме.</p>
-          </div>
-        </div>
+          </article> <!-- На прошлой проверке ревьюер посоветовала мне элемент two-columns c div заменить на article. Я так и сделала и решила, что вложенный в него div тоже заменю на article. Это правильно, или можно было оставить <div class="two-columns__main-text"></div>, и это не важно?-->
+        </article>
       </section>
 
       <section class="digits">
-        <div class="section-title">
           <h2 class="section-title">Цифры и факты</h2>
-        </div>
-        <div class="section-subtitle">
-          <h3 class="section-subtitle">Про учёбу и мозг</h3>
-        </div>
+          <p class="section-subtitle">Про учёбу и мозг</p>
         <ul class="table">
             <li class="table__cell">
               <h4 class="table__heading">86 миллиардов</h4>
@@ -89,13 +85,13 @@
 
       <section class="feynman">
         <h2 class="feynman__title">Метод Фейнмана</h2>
-        <h3 class="feynman__subtitle">Выучить и не забыть.</h3>
-        <a class="feynman__link" href="#">Подробнее →</a>
+        <p class="feynman__subtitle">Выучить и не забыть.</p>
+        <a class="feynman__link" href="#">Подробнее &#8594;</a>
       </section>
 
       <section class="kaufman">
-            <h2 class="section-title section-title_theme_dark section-title__text_theme_dark">Принципы обучения</h2>
-            <h3 class="section-subtitle section-subtitle_theme_dark section-subtitle__text_theme_dark">от Джоша Кауфмана</h3>
+            <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
+            <p class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</p>
         <ul class="table table_theme_dark">
           <li class="table__cell table__cell_theme_dark">
             <h4 class="table__heading table__heading_theme_dark">1</h4>
@@ -138,7 +134,7 @@
             <p class="table__text table__text_theme_dark">Уделяйте внимание количеству и скорости.</p>
           </li>
         </ul>
-        <img class="kaufman__triangle" src="./images/kaufman-triangle.svg" alt="kaufman triangle">
+        <div class="kaufman__triangle"></div>
       </section>
     </main>
   </div>
@@ -146,37 +142,43 @@
   <div class="page">
     <footer class="footer">
       <div class="footer__columns">
-        <div class="footer__column_content_copyright">
-          <img class="logo logo_place_footer" alt="Логотип" src="./images/logo_place_footer.svg">
-          <p class="footer__author">©2021. Юля Яковлева</p>
+        <div class="footer__column footer__column_content_copyright">
+          <img class="logo logo_place_footer" alt="логотип" src="./images/logo_place_footer.svg">
+          <p class="footer__author">&#169; 2021. Юля Яковлева</p>
         </div>
 
-          <div class="footer__column_content_info">
+        <nav class="footer__column footer__column_content_info">
           <h4 class="footer__column-heading">О Практикуме</h4>
           <ul class="footer__cloumn-links">
-            <li class="footer__cloumn-links__text">Главная</li>
-            <li class="footer__cloumn-links__text">Концепция</li>
-            <li class="footer__cloumn-links__text">Наставники</li>
+            <li class="footer__list-item">
+              <a class="footer__column-link" href=#>Главная</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__column-link" href=#>Концепция</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__column-link" href=#>Наставники</a>
+            </li>
           </ul>
-        </div>
+        </nav>
 
-        <div class="footer__column_content_social">
+        <nav class="footer__column footer__column_content_social">
           <h4 class="footer__column-heading">Соцсети</h4>
           <ul class="footer__cloumn-links">
-            <li class="footer__cloumn-links__text">
-              <a class="footer__cloumn-links__text" href=#>
-                <img class="footer__social-icon" src="./images/facebook_color_white.svg" alt="Facebook-icon">Facebook</a>
+            <li class="footer__list-item">
+              <a class="footer__column-link" href=#>
+                <img class="footer__social-icon" src="./images/facebook_color_white.svg" alt="фейсбук">Facebook</a>
             </li>
-            <li class="footer__cloumn-links__text">
-              <a class="footer__cloumn-links__text" href=#>
-              <img class="footer__social-icon" src="./images/vk_color_white.svg" alt="VK-icon">ВКонтакте</a>
+            <li class="footer__list-item">
+              <a class="footer__column-link" href=#>
+              <img class="footer__social-icon" src="./images/vk_color_white.svg" alt="вконтакте">ВКонтакте</a>
             </li>
-            <li class="footer__cloumn-links__text">
-              <a class="footer__cloumn-links__text" href=#>
-              <img class="footer__social-icon" src="./images/instagram_color_white.svg" alt="Instagram-icon">Instagram</a>
+            <li class="footer__list-item">
+              <a class="footer__column-link" href=#>
+              <img class="footer__social-icon" src="./images/instagram_color_white.svg" alt="инстаграм">Instagram</a>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
     </footer>
   </div>
