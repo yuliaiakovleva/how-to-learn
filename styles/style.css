@@ -22,10 +22,6 @@
   color: white;
 }
 
-a:hover {
-  color: coral;
-}
-
 .header {
   height: 100vh;
   min-height: 600px;
@@ -69,6 +65,10 @@ a:hover {
 .header__link {
   text-decoration: none;
   color: #2f80ed;
+}
+
+.header__link:hover {
+  color: coral;
 }
 
 .header__main-illustration {
@@ -224,6 +224,10 @@ a:hover {
   color: #2f80ed;
 }
 
+.feynman__link:hover {
+  color: coral;
+}
+
 /* kaufman */
 .kaufman {
   background-color: #1f1f1f;
@@ -313,6 +317,10 @@ a:hover {
   font-weight: normal;
   display: flex;
   align-items: center;
+}
+
+.footer__column-link:hover {
+  color: coral;
 }
 
 .footer__social-icon {
