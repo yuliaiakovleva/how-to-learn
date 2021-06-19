@@ -8,10 +8,9 @@
   top: 50%;
   right: 48px;
   color: #2f80ed;
-  transition: opacity 3s ease;
+  transition: opacity 0.5s ease;
 }
 
 .feynman__link:hover {
-  color: red;
   opacity: 0.4;
 }
